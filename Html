@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Подключение css файла-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Калькулятор чаевых</h1>
+    <form class="formTipCalculator">
+      <label
+        >Сумма по счету
+        <input type="text" class="amountOnAccount" />
+      </label>
+      <label
+        >Качество обслуживания
+        <select class="serviceQuality">
+          <option value="0">Плохое (0%)</option>
+          <option value="5">Нормальное (5%)</option>
+          <option value="10">Хорошее (10%)</option>
+          <option value="15">Отличное (15%)</option>
+        </select>
+      </label>
+      <label
+        >Количество человек
+        <input class="qtyPeople" type="text" />
+      </label>
+      <button type="submit">Посчитать</button>
+      <button type="reset">сбросить</button>
+    </form>
+    <p>
+      Чаевые:
+      <span class="commonTip">0</span>
+      <span></span>
+    </p>
+    <p>
+      Всего:
+      <span class="countTipPerPerson">0</span>
+      <span></span>
+    </p>
+    <!-- Подключение js файла -->
+    <script src="script.js"></script>
+  </body>
+</html>
